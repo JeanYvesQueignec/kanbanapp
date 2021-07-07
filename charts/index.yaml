@@ -9,7 +9,7 @@ entries:
     name: kanbanapp-demo
     type: application
     urls:
-    - https://sdandey.github.io/kanbanapp-helmcharts/charts/charts/kanbanapp-demo-0.3.0.tgz
+    - https://sdandey.github.io/kanbanapp-helmcharts/charts/kanbanapp-demo-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.16.0
@@ -19,6 +19,6 @@ entries:
     name: kanbanapp-demo
     type: application
     urls:
-    - https://sdandey.github.io/kanbanapp-helmcharts/charts/charts/kanbanapp-demo-0.2.0.tgz
+    - https://sdandey.github.io/kanbanapp-helmcharts/charts/kanbanapp-demo-0.2.0.tgz
     version: 0.2.0
 generated: "2021-07-07T03:39:55.727093-05:00"
