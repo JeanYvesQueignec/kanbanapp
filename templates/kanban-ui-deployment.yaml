@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.22.0 (955b78124)
+  labels:
+    io.kompose.service: kanban-ui
+  name: kanban-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: kanban-ui
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.22.0 (955b78124)
+      labels:
+        io.kompose.service: kanban-ui
+    spec:
+      containers:
+        - image: sdandey/dandey-apps:kanban-board-kanban-ui
+          name: kanban-ui
+          ports:
+            - containerPort: 80
+          resources: {}
+      restartPolicy: Always
+status: {}
