@@ -36,11 +36,10 @@ backend:
 
   ports:
     containerPort: 8080
-    targetPort: 80
+    targetPort: 8080
   
   service:
-    type: ClusterIP
-
+    type: NodePort
 
 serviceAccount:
   backend: 
